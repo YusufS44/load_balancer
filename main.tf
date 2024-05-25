@@ -75,6 +75,8 @@ resource "google_compute_health_check" "home" {
     name = "home"
     check_interval_sec = 1
     timeout_sec = 1
+    healthy_threshold = 2
+    unhealthy_threshold = 2
     http_health_check {
         request_path = "/"
     }
