@@ -11,6 +11,6 @@ provider "google" {
   # Configuration options
   project = var.project
   region = var.region
-  credentials = file(var.credentials)
+  credentials = var.credentials
   zone = var.zone
 }
